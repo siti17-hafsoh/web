@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    Payment Gateway
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+  <div class="flex flex-col lg:flex-row min-h-screen">
+    <!-- Left Section -->
+    <div class="flex-1 flex flex-col items-center justify-center bg-white p-8">
+      <img alt="Google logo" class="w-48 h-48" height="200" src="https://th.bing.com/th/id/R.0fa3fe04edf6c0202970f2088edea9e7?rik=joOK76LOMJlBPw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fgoogle-logo-png-open-2000.png&ehk=0PJJlqaIxYmJ9eOIp9mYVPA4KwkGo5Zob552JPltDMw%3d&risl=&pid=ImgRaw&r=0" width="200" />
+      <h1 class="text-2xl font-bold text-blue-600 mt-4">
+        Payment Gateway
+      </h1>
+      <p class="text-gray-500">
+        Enter school location details!
+      </p>
+    </div>
+    <!-- Right Section -->
+    <div class="flex-1 bg-white p-8">
+      <h2 class="text-2xl font-bold mb-2">
+        Complete Registration Payment
+      </h2>
+      <form>
+        <!-- Personal details -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold mb-2">
+            Personal Details
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Address Line -->
+            <div>
+              <label for="address" class="block text-gray-700">Address Line</label>
+              <input id="address" class="border border-gray-300 p-2 rounded w-full" placeholder="P.O.Box 1223" type="text" />
+            </div>
+            <!-- City -->
+            <div>
+              <label for="city" class="block text-gray-700">City</label>
+              <input id="city" class="border border-gray-300 p-2 rounded w-full" placeholder="Arusha" type="text" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <!-- State -->
+            <div>
+              <label for="state" class="block text-gray-700">State</label>
+              <input id="state" class="border border-gray-300 p-2 rounded w-full" placeholder="Arusha, Tanzania" type="text" />
+            </div>
+            <!-- Postal Code -->
+            <div>
+              <label for="postal" class="block text-gray-700">Postal Code</label>
+              <input id="postal" class="border border-gray-300 p-2 rounded w-full" placeholder="9090" type="text" />
+            </div>
+          </div>
+        </div>
+        <!-- Payment methods -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold mb-2">
+            Payment Methods
+          </h3>
+          <div class="flex space-x-4">
+            <img alt="Visa logo" class="w-12 h-8" src="https://e7.pngegg.com/pngimages/338/270/png-clipart-logo-credit-card-visa-debit-card-credit-card-blue-text.png" />
+            <img alt="Stripe logo" class="w-12 h-8" src="https://cdn.iconscout.com/icon/free/png-256/free-stripe-logo-icon-download-in-svg-png-gif-file-formats--online-payment-logos-pack-icons-226458.png?f=webp" />
+            <img alt="PayPal logo" class="w-12 h-8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-UkT90Nyp718XzQAyR-Z3CAJY4ngrMU2TG_MJFGbrTUmGoZce7LFYy8oBURMCR0KxV8&usqp=CAU" />
+            <img alt="MasterCard logo" class="w-12 h-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/800px-Mastercard_2019_logo.svg.png" />
+            <img alt="Google Pay logo" class="w-12 h-8" src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/436/Google_Pay_GPay_Logo-512.png" />
+          </div>
+        </div>
+        <!-- Card details -->
+        <div class="mb-6">
+          <h3 class="text-lg font-semibold mb-2">
+            Card Details
+          </h3>
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <label for="cardholder" class="block text-gray-700">Cardholder's Name</label>
+              <input id="cardholder" class="border border-gray-300 p-2 rounded w-full" placeholder="Cardholder's Name" type="text" />
+            </div>
+            <div>
+              <label for="cardnumber" class="block text-gray-700">Card Number</label>
+              <input id="cardnumber" class="border border-gray-300 p-2 rounded w-full" placeholder="Card Number" type="text" />
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="expiry" class="block text-gray-700">Expiry Date</label>
+                <input id="expiry" class="border border-gray-300 p-2 rounded w-full" placeholder="MM/YY" type="text" />
+              </div>
+              <div>
+                <label for="cvv" class="block text-gray-700">CVC</label>
+                <input id="cvv" class="border border-gray-300 p-2 rounded w-full" placeholder="CVV" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition" type="submit">
+          Next
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
